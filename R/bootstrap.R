@@ -1,13 +1,13 @@
-#' Bootstrap theme page
+#' Bootswatch theme
 #' 
 #' ...
 #' 
 #' @param theme bootstrap theme
-#' @param ... see bootstrapPage(...)
+#' @param list tagList (e.g. pageWithSidebar())
 #' @export
-bootstrapThemePage <- function(theme = "amelia", ...) {
-
-    url <- sprintf("http://netdna.bootstrapcdn.com/bootswatch/2.3.1/%s/bootstrap.min.css", theme)
+bootswatchTheme <- function(theme = "amelia", list, version = "2.3.1") {
+    
+    url <- sprintf("http://netdna.bootstrapcdn.com/bootswatch/%s/%s/bootstrap.min.css", version, theme)
     
     css <- tagList(
         tags$head(
@@ -16,6 +16,6 @@ bootstrapThemePage <- function(theme = "amelia", ...) {
         )
     )
     
-    bootstrapPage(css, ...)
+    tagList(list, css)
     
 }
