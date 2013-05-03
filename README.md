@@ -1,0 +1,4 @@
+shinySparkle
+============
+
+Shiny add-ons
