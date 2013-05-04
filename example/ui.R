@@ -30,6 +30,7 @@ shinyUI(bootswatchTheme("united", bootstrapPage(
         #shareButtons(5),
         #shareButtons(6),
         #shareButtons(7),
+        followButtons(small = FALSE, vertical = T, twitter = "thorei", facebook = "thomas.reinholdsson", linkedin_company = "mycompany", linkedin = "thomasreinholdsson"),
         
         radioButtons("dist", "Distribution type:",
                      list("Normal" = "norm",

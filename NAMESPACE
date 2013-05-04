@@ -1,3 +1,4 @@
 export(bootswatchTheme)
+export(followButtons)
 export(githubButton)
 export(shareButtons)

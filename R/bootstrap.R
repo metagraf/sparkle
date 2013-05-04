@@ -66,3 +66,47 @@ shareButtons <- function(style = 1) {
     HTML(html)
 }
 
+#' Follow buttons
+#' 
+#' ...
+#' 
+#' @param style style type (1-7)
+#' @export
+followButtons <- function(small = TRUE, vertical = FALSE, facebook = NULL, twitter = NULL, linkedin = NULL, linkedin_company = NULL, google = NULL, youtube = NULL, flickr = NULL, vimeo = NULL, pinterest = NULL, instagram = NULL, foursquare = NULL, tumblr = NULL, rss = NULL) {
+    
+    link <- function(type, user, company = FALSE) {
+        if (!is.null(type)) {
+            company <- if (company) 'addthis:usertype="company"' else ""
+            html <- sprintf('<a class="addthis_button_%s_follow" addthis:userid="%s" %s></a>', type, user, company)
+            return(html)
+        } else {
+            return(NULL)
+        }
+    }
+    
+    small <- if (small) "" else " addthis_32x32_style"
+    vertical <- if (vertical) "vertical" else "default"
+    
+    html <- sprintf('<div class="addthis_toolbox%s addthis_%s_style">\n
+    %s\n
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5183f22a1209020b"></script>\n', 
+    small, vertical, paste(
+        link("facebook", facebook),
+        link("twitter", twitter),
+        link("linkedin", linkedin),
+        link("linkedin", linkedin_company, company = T),
+        link("google", google),
+        link("youtube", youtube), 
+        link("flickr", flickr),
+        link("vimeo", vimeo),
+        link("pinterest", pinterest),
+        link("instagram", instagram),
+        link("foursquare", foursquare),
+        link("tumblr", tumblr),
+        link("rss", rss),
+        collapse = "\n")
+    )
+    HTML(html)
+}
+
