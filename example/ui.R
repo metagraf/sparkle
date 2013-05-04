@@ -2,7 +2,7 @@ library(shiny)
 library(sparkle)
 
 # Define UI for dataset viewer application
-shinyUI(bootswatchTheme("united", pageWithSidebar(
+shinyUI(bootswatchTheme("united", bootstrapPage(
     
     # Application title
     headerPanel("Tabsets"),
@@ -23,6 +23,13 @@ shinyUI(bootswatchTheme("united", pageWithSidebar(
         githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = TRUE, small = FALSE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = TRUE, small = FALSE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = TRUE, small = FALSE),
+        #shareButtons(1),
+        #shareButtons(2),
+        #shareButtons(3),
+        shareButtons(2),
+        #shareButtons(5),
+        #shareButtons(6),
+        #shareButtons(7),
         
         radioButtons("dist", "Distribution type:",
                      list("Normal" = "norm",
@@ -45,6 +52,7 @@ shinyUI(bootswatchTheme("united", pageWithSidebar(
             tabPanel("Plot", plotOutput("plot")), 
             tabPanel("Summary", verbatimTextOutput("summary")), 
             tabPanel("Table", tableOutput("table"))
-        )
+            
+        ),shareButtons(1)
     )
 )))

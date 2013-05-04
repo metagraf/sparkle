@@ -1,6 +1,6 @@
 \name{githubButton}
 \alias{githubButton}
-\title{Github buttons}
+\title{Github button}
 \usage{
   githubButton(user = "metagraf", repo = "sparkle",
     type = "watch", count = TRUE, small = TRUE)

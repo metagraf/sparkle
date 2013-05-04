@@ -20,7 +20,7 @@ bootswatchTheme <- function(theme = "amelia", list, version = "2.3.1") {
     
 }
 
-#' Github buttons
+#' Github button
 #' 
 #' ...
 #' 
@@ -52,8 +52,17 @@ githubButton <- function(user = "metagraf", repo = "sparkle", type = "watch", co
     size <- if (small) "none" else "large"
 
     html <- sprintf("<iframe src=\"http://ghbtns.com/github-btn.html?user=%s&repo=%s&type=%s&count=%s&size=%s\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"%s\" height=\"%s\"></iframe>", user, repo, type, count_str, size, width, height)
-
-    shiny::HTML(html)
+    HTML(html)
 }
 
+#' Share buttons
+#' 
+#' ...
+#' 
+#' @param style style type (1-7)
+#' @export
+shareButtons <- function(style = 1) {
+    html <- paste(readLines(file.path(system.file(package = "sparkle"), "addthis", sprintf("style%s.html", style))), collapse = "")
+    HTML(html)
+}
 
