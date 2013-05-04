@@ -10,7 +10,35 @@
     rss = NULL)
 }
 \arguments{
-  \item{style}{style type (1-7)}
+  \item{small}{small size; TRUE or FALSE}
+
+  \item{vertical}{vertical type; TRUE or FALSE}
+
+  \item{facebook}{facebook user id}
+
+  \item{twitter}{twitter user id}
+
+  \item{linkedin}{linkedin user id}
+
+  \item{linkedin_company}{linkedin company user id}
+
+  \item{google}{google user id}
+
+  \item{youtube}{user id}
+
+  \item{flickr}{flickr user id}
+
+  \item{vimeo}{vimeo user id}
+
+  \item{pinterest}{pinterest user id}
+
+  \item{instagram}{instagram user id}
+
+  \item{foursquare}{foursquare user id}
+
+  \item{tumblr}{tumblr user id}
+
+  \item{rss}{rss feed}
 }
 \description{
   ...

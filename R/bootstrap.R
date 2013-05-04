@@ -70,7 +70,21 @@ shareButtons <- function(style = 1) {
 #' 
 #' ...
 #' 
-#' @param style style type (1-7)
+#' @param small small size; TRUE or FALSE
+#' @param vertical vertical type; TRUE or FALSE
+#' @param facebook facebook user id
+#' @param twitter twitter user id
+#' @param linkedin linkedin user id
+#' @param linkedin_company linkedin company user id
+#' @param google google user id
+#' @param youtube user id
+#' @param flickr flickr user id
+#' @param vimeo vimeo user id
+#' @param pinterest pinterest user id
+#' @param instagram instagram user id
+#' @param foursquare foursquare user id
+#' @param tumblr tumblr user id
+#' @param rss rss feed
 #' @export
 followButtons <- function(small = TRUE, vertical = FALSE, facebook = NULL, twitter = NULL, linkedin = NULL, linkedin_company = NULL, google = NULL, youtube = NULL, flickr = NULL, vimeo = NULL, pinterest = NULL, instagram = NULL, foursquare = NULL, tumblr = NULL, rss = NULL) {
     
@@ -109,4 +123,3 @@ followButtons <- function(small = TRUE, vertical = FALSE, facebook = NULL, twitt
     )
     HTML(html)
 }
-

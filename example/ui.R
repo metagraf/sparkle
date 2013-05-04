@@ -11,26 +11,17 @@ shinyUI(bootswatchTheme("united", bootstrapPage(
     # and number of observations to generate. Note the use of the br()
     # element to introduce extra vertical spacing
     sidebarPanel(
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = FALSE, small = TRUE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = FALSE, small = TRUE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = FALSE, small = TRUE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = TRUE, small = TRUE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = TRUE, small = TRUE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = TRUE, small = TRUE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = FALSE, small = FALSE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = FALSE, small = FALSE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = FALSE, small = FALSE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = TRUE, small = FALSE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = TRUE, small = FALSE),
-        githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = TRUE, small = FALSE),
         #shareButtons(1),
         #shareButtons(2),
         #shareButtons(3),
-        shareButtons(2),
+        shareButtons(1),
         #shareButtons(5),
         #shareButtons(6),
         #shareButtons(7),
-        followButtons(small = FALSE, vertical = T, twitter = "thorei", facebook = "thomas.reinholdsson", linkedin_company = "mycompany", linkedin = "thomasreinholdsson"),
+        followButtons(small = T, vertical = F, twitter = "thorei", facebook = "thomas.reinholdsson", linkedin_company = "mycompany", linkedin = "thomasreinholdsson"),
         
         radioButtons("dist", "Distribution type:",
                      list("Normal" = "norm",
