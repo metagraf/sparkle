@@ -1,4 +1,4 @@
-shinySparkle
-============
+sparkle
+=======
 
 Shiny add-ons
