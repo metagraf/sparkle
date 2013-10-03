@@ -34,7 +34,7 @@ select2Input <- function(inputId, ..., options = list(width = "200px")) {
         ),
         tags$script(
             sprintf(
-                "$(document).ready(function() { $('#%s').select2(%s); });",
+                "$(document).ready(function() { $('#%s').select2(%s);});",
                 inputId,
                 toJSON(options)
             )

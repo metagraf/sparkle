@@ -48,7 +48,7 @@ bootstrapSelectInput <- function(
     selectTag <- tags$select(id = inputId)
     if (multiple) selectTag$attribs$multiple <- "multiple"
 
-    selectTag$attribs$class <- "selectpicker"
+    selectTag$attribs$class <- "selectpicker2"
 
     addAttr("data-style", style)
     addAttr("title", title)
@@ -91,9 +91,12 @@ bootstrapSelectInput <- function(
             )
         ),
         bootstrapSelectTags,
+        
+        
         tags$script(
             sprintf(
-                "$(document).ready(function() { $('.selectpicker').selectpicker(%s);});",
+                "$(document).ready(function() { $('#%s').selectpicker(%s);});",
+                inputId,
                 toJSON(options)
             )
         )
