@@ -1,4 +1,6 @@
+export(bootstrapSelectInput)
 export(bootswatchTheme)
 export(followButtons)
 export(githubButton)
+export(select2Input)
 export(shareButtons)
