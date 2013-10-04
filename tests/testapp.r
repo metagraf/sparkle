@@ -9,11 +9,13 @@ runApp(
             bootstrapSelectInput("id3", "label3", head(LETTERS), multiple = T),
             bootstrapSelectInput("id4", "label4", c("a", "b"), content = c("<img src=\"http://www.w3schools.com/images/compatible_safari.gif\" width = '20px' height = '20px' alt=\"Smiley face\">Safari", "<span class='label label-success'>Relish</span>")),
             select2Input("id5", "label5", 1:5),
+            multiselectInput("id6", "label6", c("Food", "Drinks", "Cakes"), multiple = T, options = list(enableFiltering = T, includeSelectAllOption = T, buttonClass = 'btn btn-link')),
+            multiselectInput("id7", "label7", c("Food", "Drinks", "Cakes"), multiple = T, options = list(buttonClass = 'btn btn-primary disabled')),
             textOutput("test")
         ),
         server = function(input, output, session) {
             output$test <- renderText({
-                paste(input$id, "\n", paste(input$id2, collapse = ", "))
+                paste(input$id, "\n", paste(input$id6, collapse = ", "))
             })
         }
     )
