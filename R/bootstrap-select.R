@@ -97,7 +97,7 @@ bootstrapSelectInput <- function(
             sprintf(
                 "$(document).ready(function() { $('#%s').selectpicker(%s);});",
                 inputId,
-                toJSON(options)
+                to_json(options)
             )
         )
     )
