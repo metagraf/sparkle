@@ -36,7 +36,7 @@ multiselectInput <- function(inputId, ..., options = NULL) {
             sprintf(
                 "$(document).ready(function() { $('#%s').multiselect(%s);});",
                 inputId,
-                toJSON(options)
+                to_json(options)
             )
         )
     )

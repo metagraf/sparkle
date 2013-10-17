@@ -15,3 +15,4 @@ Collate:
     'bootstrap-select.R'
     'select2.R'
     'bootstrap-multiselect.R'
+    'json.R'
