@@ -16,3 +16,4 @@ Collate:
     'select2.R'
     'bootstrap-multiselect.R'
     'json.R'
+    'bootstrap-checkbox.R'
