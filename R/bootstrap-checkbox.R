@@ -25,6 +25,11 @@ bootstrapCheckbox <- function(inputId, ..., options = NULL) {
                     rel = "stylesheet",
                     type = "text/css",
                     href = "sparkle/bootstrap-checkbox/css/bootstrap-checkbox.css"
+                ),
+                tags$link(
+                    rel = "stylesheet",
+                    type = "text/css",
+                    href = "sparkle/bootstrap-checkbox/css/custom.css"
                 )
             )
         ),
