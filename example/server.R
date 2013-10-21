@@ -6,6 +6,11 @@ shinyServer(function(input, output) {
     # Reactive expression to generate the requested distribution. This is 
     # called whenever the inputs change. The renderers defined 
     # below then all use the value computed from this expression
+    
+    output$checkbox <- renderText({
+        input$checkbox
+    })
+    
     data <- reactive({  
         dist <- switch(input$dist,
                        norm = rnorm,
