@@ -1,0 +1,3 @@
+.modal-open .modal,.btn:focus{
+    outline:none;
+}
