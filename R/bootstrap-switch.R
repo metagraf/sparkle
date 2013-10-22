@@ -6,7 +6,7 @@
 #' @param ... see checkboxInput()
 #' @param size size (e.g. 'switch-mini')
 #' @export
-bootstrapSwitch <- function(inputId, ..., type = "make-switch", size = "switch-mini") {
+bootstrapSwitch <- function(inputId, dataLabelIcon = "", dataOnLabel = "On", dataOffLabel = "Off", type = "make-switch", size = "switch-mini") {
     
     suppressMessages(singleton(addResourcePath("sparkle", system.file("js", package = "sparkle"))))
     
@@ -28,9 +28,14 @@ bootstrapSwitch <- function(inputId, ..., type = "make-switch", size = "switch-m
                 )
             )
         ),
-        tags$div(class = type, 
-            HTML(sprintf('<input id="%s"type="checkbox" checked>', inputId))
+        #tags$div(class = type,
+        HTML(
+            sprintf(
+                '<div class="%s" data-on-label="%s" data-off-label="%s" data-label-icon="%s"><input id="%s" type="checkbox" checked></div>',
+                type, dataOnLabel, dataOffLabel, dataLabelIcon, inputId
+            )
         ),
+        #),
         tags$script(
             sprintf(
                 "$(document).ready(function() { $('#%s').bootstrapSwitch('setSizeClass', '%s');",
