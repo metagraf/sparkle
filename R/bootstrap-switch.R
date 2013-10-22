@@ -28,14 +28,13 @@ bootstrapSwitch <- function(inputId, dataLabelIcon = "", dataOnLabel = "On", dat
                 )
             )
         ),
-        #tags$div(class = type,
-        HTML(
-            sprintf(
-                '<div class="%s" data-on-label="%s" data-off-label="%s" data-label-icon="%s"><input id="%s" type="checkbox" checked></div>',
-                type, dataOnLabel, dataOffLabel, dataLabelIcon, inputId
-            )
+        tags$div(
+            class = type,
+            "data-on-label" = dataOnLabel,
+            "data-off-label" = dataOffLabel,
+            "data-label-icon" = dataLabelIcon,
+            tags$input(id = inputId, type = "checkbox")
         ),
-        #),
         tags$script(
             sprintf(
                 "$(document).ready(function() { $('#%s').bootstrapSwitch('setSizeClass', '%s');});",
