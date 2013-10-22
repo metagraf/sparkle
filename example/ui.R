@@ -16,6 +16,8 @@ shinyUI(bootswatchTheme("united", bootstrapPage(
         textOutput("switch_out"),
         bootstrapCheckbox("checkbox", "", options = list(checkedClass = "icon-off", uncheckedClass = "icon-fast-forward")),
         textOutput("checkbox"),
+        #trip("dist", "n"),
+        trip("tripid", "click to trip", list(list(sel = "#! $('.well') !#", content = "test content"), list(sel = "#! $('#tripid') !#", content = "test content 2"))),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = TRUE, small = TRUE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "follow", count = TRUE, small = TRUE),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "fork", count = TRUE, small = TRUE),

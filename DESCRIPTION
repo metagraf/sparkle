@@ -18,3 +18,4 @@ Collate:
     'json.R'
     'bootstrap-checkbox.R'
     'bootstrap-switch.R'
+    'trip.R'
