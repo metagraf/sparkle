@@ -11,6 +11,9 @@ shinyUI(bootswatchTheme("united", bootstrapPage(
     # and number of observations to generate. Note the use of the br()
     # element to introduce extra vertical spacing
     sidebarPanel(
+        bootstrapSwitch("switch_in"),
+        bootstrapSwitch("switch2", dataLabelIcon="icon-fullscreen", dataOnLabel="<i class='icon-ok icon-white'></i>", dataOffLabel="<i class='icon-remove'></i>"),
+        textOutput("switch_out"),
         bootstrapCheckbox("checkbox", "", options = list(checkedClass = "icon-off", uncheckedClass = "icon-fast-forward")),
         textOutput("checkbox"),
         githubButton(user = "metagraf", repo = "shinySparkle", type = "watch", count = TRUE, small = TRUE),

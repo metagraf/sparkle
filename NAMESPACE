@@ -1,5 +1,6 @@
 export(bootstrapCheckbox)
 export(bootstrapSelectInput)
+export(bootstrapSwitch)
 export(bootswatchTheme)
 export(followButtons)
 export(githubButton)

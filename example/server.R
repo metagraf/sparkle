@@ -11,6 +11,10 @@ shinyServer(function(input, output) {
         input$checkbox
     })
     
+    output$switch_out <- renderText({
+        input$switch_in
+    })
+    
     data <- reactive({  
         dist <- switch(input$dist,
                        norm = rnorm,

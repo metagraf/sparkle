@@ -17,3 +17,4 @@ Collate:
     'bootstrap-multiselect.R'
     'json.R'
     'bootstrap-checkbox.R'
+    'bootstrap-switch.R'
