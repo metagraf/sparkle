@@ -38,8 +38,8 @@ bootstrapSwitch <- function(inputId, dataLabelIcon = "", dataOnLabel = "On", dat
         #),
         tags$script(
             sprintf(
-                "$(document).ready(function() { $('#%s').bootstrapSwitch('setSizeClass', '%s');",
-                type,
+                "$(document).ready(function() { $('#%s').bootstrapSwitch('setSizeClass', '%s');});",
+                inputId,
                 to_json(size)
             )
         )
