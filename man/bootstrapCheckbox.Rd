@@ -2,7 +2,7 @@
 \alias{bootstrapCheckbox}
 \title{Bootstrap checkbox}
 \usage{
-  bootstrapCheckbox(inputId, ..., options = NULL)
+bootstrapCheckbox(inputId, ..., options = NULL)
 }
 \arguments{
   \item{inputId}{input id}
@@ -12,6 +12,6 @@
   \item{options}{select 2 options}
 }
 \description{
-  ...
+...
 }
 

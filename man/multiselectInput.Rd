@@ -2,7 +2,7 @@
 \alias{multiselectInput}
 \title{Bootstrap multiselect}
 \usage{
-  multiselectInput(inputId, ..., options = NULL)
+multiselectInput(inputId, ..., options = NULL)
 }
 \arguments{
   \item{inputId}{input id}
@@ -12,6 +12,6 @@
   \item{options}{select 2 options}
 }
 \description{
-  ...
+...
 }
 
