@@ -2,8 +2,8 @@
 \alias{githubButton}
 \title{Github button}
 \usage{
-  githubButton(user = "metagraf", repo = "sparkle",
-    type = "watch", count = TRUE, small = TRUE)
+githubButton(user = "metagraf", repo = "sparkle", type = "watch",
+  count = TRUE, small = TRUE)
 }
 \arguments{
   \item{user}{github user}
@@ -17,6 +17,6 @@
   \item{small}{small size (TRUE/FALSE)}
 }
 \description{
-  ...
+...
 }
 

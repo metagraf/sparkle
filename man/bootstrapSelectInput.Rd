@@ -2,11 +2,10 @@
 \alias{bootstrapSelectInput}
 \title{bootstrap-select Input}
 \usage{
-  bootstrapSelectInput(inputId, label, choices,
-    selected = NULL, multiple = FALSE, style = NULL,
-    title = NULL, selectedTextFormat = NULL, header = NULL,
-    icon = NULL, subtext = NULL, content = NULL,
-    liveSearch = NULL, size = NULL, options = NULL)
+bootstrapSelectInput(inputId, label, choices, selected = NULL,
+  multiple = FALSE, style = NULL, title = NULL,
+  selectedTextFormat = NULL, header = NULL, icon = NULL, subtext = NULL,
+  content = NULL, liveSearch = NULL, size = NULL, options = NULL)
 }
 \arguments{
   \item{inputId}{input id}
@@ -17,6 +16,6 @@
   it works yet)}
 }
 \description{
-  ...
+...
 }
 

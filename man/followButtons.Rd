@@ -2,12 +2,11 @@
 \alias{followButtons}
 \title{Follow buttons}
 \usage{
-  followButtons(small = TRUE, vertical = FALSE,
-    facebook = NULL, twitter = NULL, linkedin = NULL,
-    linkedin_company = NULL, google = NULL, youtube = NULL,
-    flickr = NULL, vimeo = NULL, pinterest = NULL,
-    instagram = NULL, foursquare = NULL, tumblr = NULL,
-    rss = NULL)
+followButtons(small = TRUE, vertical = FALSE, facebook = NULL,
+  twitter = NULL, linkedin = NULL, linkedin_company = NULL,
+  google = NULL, youtube = NULL, flickr = NULL, vimeo = NULL,
+  pinterest = NULL, instagram = NULL, foursquare = NULL, tumblr = NULL,
+  rss = NULL)
 }
 \arguments{
   \item{small}{small size; TRUE or FALSE}
@@ -41,6 +40,6 @@
   \item{rss}{rss feed}
 }
 \description{
-  ...
+...
 }
 
