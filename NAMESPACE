@@ -1,3 +1,4 @@
+export(actionButton2)
 export(bootstrapCheckbox)
 export(bootstrapSelectInput)
 export(bootstrapSwitch)
